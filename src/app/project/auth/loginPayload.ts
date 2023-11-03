@@ -3,6 +3,6 @@ export class LoginPayload {
   password: string;
   constructor() {
     this.email = 'martinluther@example.com';
-    this.password = `${new Date().getTime()}`;
+    this.password = `qwerty`;
   }
 }

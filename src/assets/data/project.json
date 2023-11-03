@@ -40,23 +40,23 @@
   ],
   "issues": [
     {
+      "title": "Angular - Inconsistent Button Behavior Across Browsers",
+      "description": "<h3>Issue Summary:</h3><p>Users have encountered inconsistent behavior of the 'Submit' button across different web browsers. Specifically, in Firefox, the button fails to trigger form validation which works as expected in Chrome.</p><h3>Technical Insights:</h3><p>Preliminary investigations point towards a JavaScript execution issue that affects the onClick event handling, possibly due to the varying JavaScript engines in different browsers. A detailed cross-browser script review is essential for ensuring compatibility and consistent user experience.</p>",
       "createdAt": "2020-08-27T14:23:38.183Z",
-      "description": "<p>I shared some of my technical decisions behind <a href='http://jira.jira-clone.com' rel='noopener noreferrer' target='_blank'>jira.jira-clone.com</a> on <a href='https://github.com/SingaporeJS/talk.js/issues/40' rel='noopener noreferrer' target='_blank'>Singapore talk.js August 2020</a> with a very catchy title - <strong>Behind the 900 stars repository 😂</strong> Do you like it? </p><p><br></p><p> Hopefully I can change the title to a thousand stars soon... 🤣</p><p><br></p><p>Thanks for having me!</p><p><br></p><p>See the </p><ul><li>Slide deck ➡ <a href='https://slides.com/trungvose/behind-the-900-star-repository-jira-clone-angular' rel='noopener noreferrer' target='_blank' style='background-color: rgb(255, 255, 255);'>https://slides.com/trungvose/behind-the-900-star-repository-jira-clone-angular</a></li><li><span style='background-color: rgb(255, 255, 255);'>Recorded talk:  </span><a href='https://youtu.be/X_beeihKk7o' rel='noopener noreferrer' target='_blank'>https://youtu.be/X_beeihKk7o</a></li></ul><p><br></p><p><img src='https://pbs.twimg.com/media/EgWe01qUcAIoNdi?format=jpg&amp;name=large' alt='Image'></p><p><br></p>",
       "id": "6527",
       "priority": "Medium",
       "reporterId": "d65047e5-f4cf-4caa-9a38-6073dcbab7d1",
       "status": "Done",
-      "title": "Behind the 900 stars - Update 08/2020",
       "type": "Story",
       "updatedAt": "2020-08-27T14:23:38.183Z",
       "userIds": ["d65047e5-f4cf-4caa-9a38-6073dcbab7d1"],
       "listPosition": 1
     },
     {
+      "title": "Python API - Slow Response Time",
+      "description": "<h3>Performance Issue:</h3><p>Our Python-based REST API's user detail retrieval endpoint is suffering from response times exceeding 500ms, violating our service level agreement (SLA) of 200ms.</p><h3>Potential Solutions:</h3><p>Backend service profiling indicates the database query as the primary bottleneck. Query optimization or database schema restructuring, along with a potential caching strategy, should be investigated to meet performance targets.</p>",
       "type": "Story",
       "priority": "Medium",
-      "title": "Jira Clone Storybook - Update 10/2020",
-      "description": "<h3>What is Storybook</h3><p>Storybook helps you build UI components in isolation from your app's business logic, data, and context. That makes it easy to develop hard-to-reach states. Save these UI states as&nbsp;stories&nbsp;to revisit during development, testing, or QA.</p><h3><br></h3><h3>Jira Clone Storybook</h3><p>This is the collection of components that I wrote for <a href='http://jira.jira-clone.com/' rel='noopener noreferrer' target='_blank' style='color: var(--vscode-textLink-foreground);'>jira.jira-clone.com</a>, includes:</p><ul><li>Avatar</li><li>Breadcrumbs</li><li>Button</li><li>Input</li><li>More to come...</li></ul><p><br></p><p>Check out the&nbsp;storybook demo&nbsp;-&gt;&nbsp;<a href=\"https://jira-storybook.jira-clone.com/\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"color: var(--color-text-link);\">https://jira-storybook.jira-clone.com/</a></p><p><br></p><p><a href=\"https://github.com/jira-clone/jira-clone-angular/blob/master/frontend/src/assets/img/jira-storybook.gif\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"color: var(--color-text-link); background-color: var(--color-bg-primary);\"><img src=\"https://github.com/jira-clone/jira-clone-angular/raw/master/frontend/src/assets/img/jira-storybook.gif\" alt=\"Jira clone built with Angular 10, Akita and ng-zorro\"></a></p>",
       "reporterId": "d65047e5-f4cf-4caa-9a38-6073dcbab7d1",
       "userIds": ["d65047e5-f4cf-4caa-9a38-6073dcbab7d1"],
       "id": "73",
@@ -66,10 +66,10 @@
       "listPosition": 2
     },
     {
+      "title": "Angular Service Worker - Failing to Update Cache",
+      "description": "<h3>Caching Problem:</h3><p>The Angular application's service worker is not updating the cache when new server changes are detected, leading to stale content issues.</p><h3>Diagnosis:</h3><p>Initial debugging suggests problems with triggering the correct service worker lifecycle events, likely stemming from errors in the cache invalidation logic specified in 'ngsw-config.json'.</p>",
       "type": "Story",
       "priority": "Highest",
-      "title": "Angular Spotify 🎧",
-      "description": "<h3>Hey Angular people, what's up? 😆</h3><p>I wanted to introduce you my latest application: <strong>Angular Spotify.</strong></p><p><br></p><p>It is a simple Spotify client built with Angular 11, Nx workspace, ngrx, TailwindCSS and ng-zorro.</p><p><br></p><p>Check out the&nbsp;live application&nbsp;-&gt; <a href=\"https://spotify.jira-clone.com\" rel=\"noopener noreferrer\" target=\"_blank\">https://spotify.jira-clone.com</a></p><p><span style=\"color: var(--color-text-link);\">Source code: </span><a href=\"https://github.com/jira-clone/angular-spotify\" rel=\"noopener noreferrer\" target=\"_blank\">https://github.com/jira-clone/angular-spotify</a></p><p><br></p><p>Spotify premium&nbsp;is required for the Web Playback SDK to play music. If you are using a free account, you can still browse the app, but it couldn't play the music. Sorry about that&nbsp;🤣</p><h2><br></h2><p><a href=\"https://github.com/jira-clone/angular-spotify/blob/main/libs/web/shared/assets/src/assets/readme/angular-spotify-demo-short.gif\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"color: var(--color-text-link); background-color: var(--color-bg-primary);\"><img src=\"https://github.com/jira-clone/angular-spotify/raw/main/libs/web/shared/assets/src/assets/readme/angular-spotify-demo-short.gif\" alt=\"Angular Spotify Demo\"></a></p><p><br></p><p><br></p><p><a href=\"https://github.com/jira-clone/angular-spotify/blob/main/libs/web/shared/assets/src/assets/readme/angular-spotify-visualization.gif\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"color: var(--color-text-link); background-color: var(--color-bg-primary);\"><img src=\"https://github.com/jira-clone/angular-spotify/raw/main/libs/web/shared/assets/src/assets/readme/angular-spotify-visualization.gif\" alt=\"Angular Spotify Visualizer\"></a></p><p><br></p>",
       "reporterId": "d65047e5-f4cf-4caa-9a38-6073dcbab7d1",
       "userIds": ["d65047e5-f4cf-4caa-9a38-6073dcbab7d1"],
       "id": "2021",
@@ -79,10 +79,10 @@
       "listPosition": 1
     },
     {
+      "title": "Python - Memory Leak in Data Processing Service",
+      "description": "<h3>Memory Leak Detected:</h3><p>A growing memory footprint that does not subside post data batch processing is observed, culminating in OutOfMemory errors.</p><h3>Resolution Approach:</h3><p>Code review and refactoring for improved memory management, especially in the handling and disposal of large data objects, is urgently needed.</p>",
       "type": "Story",
       "priority": "Highest",
-      "title": "Merry Christmas 🎄🎄🎄",
-      "description": "<p><span style='background-color: transparent;'>2020 is about to an end, and the holiday session is coming. It was such a particular year for you and me. I have been staying in Singapore for more than eight months without traveling anywhere else. Probably, I will not be able to come back home for our upcoming Tet holiday. But tough times will make us </span><u style='background-color: transparent;'>stronger</u><span style='background-color: transparent;'>, I believe so :)</span></p><p><br></p><p><span style='background-color: transparent;'>I want to take this opportunity to say </span><u style='background-color: transparent;'>thank you for all of your support</u><span style='background-color: transparent;'> for my project, especially for Angular Jira Clone. Seeing my work got lots of positive comments and discussions made my 2020 genuinely unforgettable. I am working on some exciting Angular projects, and hopefully I can publish them very soon in 2021.</span></p><p><br></p><p><strong style='background-color: transparent;'>I hope your holiday season is full of peace, joy, and happiness. Stay safe!</strong></p><p><br></p><p><span style='color: rgb(0, 0, 0);'><img src='https://res.cloudinary.com/dvujyxh7e/image/upload/c_scale,w_250/v1608345048/christmas_totoro_2013-02_wphb7s.jpg'></span></p><p><br></p><p>P/s: This is Totoro, my most favorite character 😂</p>",
       "reporterId": "d65047e5-f4cf-4caa-9a38-6073dcbab7d1",
       "userIds": ["d65047e5-f4cf-4caa-9a38-6073dcbab7d1"],
       "id": "2020",
@@ -92,10 +92,10 @@
       "listPosition": 1
     },
     {
+      "title": "Angular - i18n Support Not Working for RTL Languages",
+      "description": "<h3>i18n Challenge:</h3><p>Right-to-Left (RTL) language support, such as for Arabic and Hebrew, is malfunctioning, with the application layout failing to adjust accordingly despite correct translation application.</p><h3>Investigation Focus:</h3><p>An in-depth review of CSS and Angular's internationalization (i18n) implementation is necessary to ensure full RTL compatibility.</p>",
       "type": "Story",
       "priority": "Highest",
-      "title": "How to build Jira clone? Follow these tutorials from its author. Update part 8 - 11/2020 😍",
-      "description": "<h3>I have prepared a set of tutorial for some major components of Jira clone, feel free to take a look! More to come, the tutorials will have at least 10 posts 😊😊😊</h3><p><br></p><ol><li><a href='https://jira-clone.com/experience/angular-jira-clone-tutorial-00-prerequisites/' rel='noopener noreferrer' target='_blank' style='color: rgb(3, 102, 214);'>Prerequisites</a></li><li><a href='https://jira-clone.com/experience/angular-jira-clone-tutorial-01-planning-and-set-up/' rel='noopener noreferrer' target='_blank' style='color: rgb(3, 102, 214);'>Create a new repository and set up a new Angular application with CLI</a></li><li><a href='https://jira-clone.com/experience/angular-jira-clone-tutorial-02-application-layout-tailwindcss-flex/' rel='noopener noreferrer' target='_blank' style='color: rgb(3, 102, 214);'>Build the application layout with flex and TailwindCSS</a></li><li><a href='https://jira-clone.com/experience/angular-jira-clone-tutorial-03-akita-state-management/' rel='noopener noreferrer' target='_blank' style='color: rgb(3, 102, 214);'>Setup Akita state management</a></li><li><a href='https://jira-clone.com/experience/angular-jira-clone-tutorial-04-editable-textbox/' rel='noopener noreferrer' target='_blank' style='color: rgb(3, 102, 214);'>Build an editable textbox</a></li><li><a href='https://jira-clone.com/experience/angular-jira-clone-tutorial-05-interactive-drag-and-drop-board/' rel='noopener noreferrer' target='_blank' style='color: rgb(3, 102, 214);'>Build an interactive drag and drop board</a></li><li><a href='https://jira-clone.com/experience/angular-jira-clone-tutorial-06-angular-markdown-text-editor/' rel='noopener noreferrer' target='_blank'>Build a markdown text editor</a></li><li><a href='https://jira-clone.com/experience/angular-jira-clone-tutorial-07-rich-text-editor/' rel='noopener noreferrer' target='_blank'>Build a rich text HTML editor</a></li><li><a href='https://jira-clone.com/experience/angular-jira-clone-tutorial-08-angular-placeholder-loading/' rel='noopener noreferrer' target='_blank'>Build a placeholder loading</a></li></ol>",
       "reporterId": "d65047e5-f4cf-4caa-9a38-6073dcbab7d1",
       "userIds": ["d65047e5-f4cf-4caa-9a38-6073dcbab7d1"],
       "id": "3957",
@@ -105,9 +105,9 @@
       "listPosition": 1
     },
     {
+      "title": "Python - Docker Container Exits Unexpectedly",
+      "description": "<h3>Service Interruption:</h3><p>The Docker container running our Python web service is exiting without warning or error tracebacks, leading to service outages.</p><h3>Proposed Solution:</h3><p>Enhanced exception handling and logging are required to diagnose and address the underlying cause of these abrupt terminations.</p>",
       "id": "9013",
-      "title": "Set up project structure ⛏️⛏️",
-      "description": "<h3>Create front end and backend folder</h3><ul><li>npm init</li><li>CLI new application</li><li>TailwindCSS configuration&nbsp;</li><li>WIP Landing Page</li><li>Build command on the root folder</li><li>Deploy to Netlify</li><li>Configure sub domain redirect - Need to retest</li><li>Configure SVG icon definition</li><li>Add Google Analytics - IMPORTANT</li><li>Refactor to module lazy loading</li><li>Add Akita - <a href='https://datorama.github.io/akita/docs/angular/architecture/#session-feature' rel='noopener noreferrer' target='_blank' style='color: inherit;'>https://datorama.github.io/akita/docs/angular/architecture/#session-feature</a></li><li>Tweet Icon</li></ul>",
       "type": "Task",
       "status": "Done",
       "priority": "Highest",
@@ -118,9 +118,9 @@
       "userIds": ["d65047e5-f4cf-4caa-9a38-6073dcbab7d1", "7ac265f9-b9ac-443f-a2b2-795682e579a4"]
     },
     {
+      "title": "Angular - Failed to Compile with AOT",
+      "description": "<h3>Compilation Error:</h3><p>Ahead-of-Time (AOT) compilation is failing, while Just-In-Time (JIT) compilation succeeds, implying potential issues with AOT's stricter checks.</p><h3>Investigation Path:</h3><p>A comprehensive comparison of AOT and JIT processes may reveal the root cause, guiding appropriate fixes.</p>",
       "id": "9210",
-      "title": "TailwindCSS configuration 😭😭😭",
-      "description": "<h1>No official guide to configure TailwindCSS and Angular<strong>⛏️⛏️</strong></h1><p><br></p><p>It took me few hours to try and configure with different option. Also, was confuse when PurgeCSS remove ng-zorro style...</p><p><br></p><p>I wrote one myself</p><p><br></p><p><a href='https://jira-clone.com/experience/configure-tailwind-css-with-angular/' rel='noopener noreferrer' target='_blank'>https://jira-clone.com/experience/configure-tailwind-css-with-angular/</a></p><p><br></p>",
       "type": "Task",
       "status": "Done",
       "priority": "Medium",
@@ -131,9 +131,9 @@
       "userIds": ["d65047e5-f4cf-4caa-9a38-6073dcbab7d1", "94502aad-c97f-43e1-a9d1-28cf3e4937a7"]
     },
     {
+      "title": "Python - Flask Route Clashing with Blueprints",
+      "description": "<h3>Routing Conflict:</h3><p>The introduction of a new Blueprint in the Flask app has resulted in an endpoint clash, overshadowing the '/users' route in the main app.</p><h3>Resolution Steps:</h3><p>Revisiting the Flask app's structure and routing system is imperative to ensure a clear route resolution hierarchy and prevent future conflicts.</p>",
       "id": "9361",
-      "title": "Try leaving a comment on this issue.",
-      "description": "<p>Adding comments to an issue is a useful way to record additional detail about an issue, and collaborate with team members. Comments are shown in the&nbsp;<strong>Comments</strong>&nbsp;section when you&nbsp;<a href=\"https://confluence.atlassian.com/jira064/what-is-an-issue-720416138.html\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"background-color: rgb(255, 255, 255); color: rgb(0, 82, 204);\">view an issue</a>.</p><p><br></p><ol><li>Open the&nbsp;<a href=\"https://confluence.atlassian.com/jira064/what-is-an-issue-720416138.html\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"color: rgb(0, 82, 204);\">issue</a>&nbsp;on which to add your comment.</li><li>Click the&nbsp;<strong>Add a comment</strong>&nbsp;button.</li><li>In the&nbsp;<strong>Comment</strong>&nbsp;text box, type your comment</li><li>Click the&nbsp;<strong>Save </strong>button or the <strong>Enter </strong>key to save the comment.</li></ol><p><br></p>",
       "type": "Story",
       "status": "InProgress",
       "priority": "Lowest",
@@ -144,9 +144,9 @@
       "userIds": ["081ccaa1-5595-4621-8074-ede4927e67b0"]
     },
     {
+      "title": "Angular - Component Styling Not Isolated",
+      "description": "<h3>Styling Issue:</h3><p>Styles from a shared component are affecting other components, which points to a failure in style encapsulation.</p><h3>Action Items:</h3><p>A rigorous review of the Angular component styles and encapsulation modes such as ViewEncapsulation is necessary to fix these styling leaks.</p>",
       "id": "9451",
-      "title": "Preparing backend API with GraphQL - Update 08/2020",
-      "description": "<p>GraphQL authentication API is ready with the enormous support from <a href='https://github.com/nartc' rel='noopener noreferrer' target='_blank'>@nartc</a></p><p><br></p><p>I am using Apollo to integrate with his well-written API. I have closed the first loop <strong>Login -&gt; Received token -&gt; Fetch me -&gt; Fetch project using token.</strong></p><p><br></p><p>Hopefully I will be able to deploy Phase 2 soon to AWS or Azure. Stay tuned!</p><p><br><p>See the current working branch: <a href='https://github.com/jira-clone/jira-clone-angular/tree/feature/gql' rel='noopener noreferrer' target='_blank'>https://github.com/jira-clone/jira-clone-angular/tree/feature/gql</a></p><br/></p><p><img src='https://i.imgur.com/MpGReIF.gif'/></p>",
       "type": "Story",
       "status": "InProgress",
       "priority": "Medium",
@@ -157,9 +157,9 @@
       "userIds": ["d65047e5-f4cf-4caa-9a38-6073dcbab7d1"]
     },
     {
+      "title": "Python - Inefficient Query Handling in ORM",
+      "description": "<h3>Database Performance Hit:</h3><p>Inefficiencies in the ORM layer are leading to performance-intensive N+1 query problems, significantly affecting systems with large datasets.</p><h3>Optimization Strategy:</h3><p>An ORM audit with an emphasis on query optimizations, like select_related and prefetch_related, is needed for performance improvements.</p>",
       "id": "9631",
-      "title": "Each issue has a single reporter but can have multiple assignees.",
-      "description": "<h2>Try assigning this issue to <strong><u>Spider Man</u></strong>. <span style='color: rgb(51, 51, 51);'>🤣&nbsp;🤣&nbsp;🤣</span></h2>",
       "type": "Task",
       "status": "Selected",
       "priority": "Low",
@@ -170,9 +170,9 @@
       "userIds": ["610451aa-10c8-4d7e-9363-311357c0b0dd", "94502aad-c97f-43e1-a9d1-28cf3e4937a7"]
     },
     {
+      "title": "Angular - Environment Configuration Overwritten on Deploy",
+      "description": "<h3>Deployment Issue:</h3><p>Environment-specific configurations in the Angular application are being reset to defaults upon deployment, causing incorrect API endpoint calls.</p><h3>Corrective Action:</h3><p>The CI/CD pipeline scripts require thorough review and adjustments to preserve the environment configurations through deployment stages.</p>",
       "id": "9546",
-      "title": "Set up Akita state management",
-      "description": "<h2>I heard about Akita and would love to try this</h2><p>Akita is a state management pattern, built on top of RxJS, which takes the idea of multiple data stores from Flux and the immutable updates from Redux, along with the concept of streaming data, to create the Observable Data Stores model.</p><p></p>",
       "type": "Story",
       "status": "Done",
       "priority": "High",
@@ -183,9 +183,9 @@
       "userIds": ["d65047e5-f4cf-4caa-9a38-6073dcbab7d1"]
     },
     {
+      "title": "Python - Asynchronous Task Queue Delays",
+      "description": "<h3>Asynchronous Processing Lag:</h3><p>Background I/O operations in the asynchronous task queue are facing unanticipated execution delays.</p><h3>Detective Work:</h3><p>Investigation into the task queue setup and I/O mechanisms is needed to diagnose the delays and enhance task processing efficiency.</p>",
       "id": "9548",
-      "title": "Make the CDK Drag and Drop animation smoother",
-      "description": "<h2>The drag and drop board is not working as I expected</h2><p>After finishing all the other heavy lifting parts, I will spend sometimes at the end to finalize the DnD. The current behavior is acceptable for now.</p><p><br></p><p><u>28 June 2020</u></p><p>After spending about half an hour on that, I found the bug. Basically, I applied the cdkDrag to my component issue-card. <u>Its height and width was collapsed to 0</u>. That's why the animation has no effect at all.</p><p><br></p><p>I fixed by fixing adding these CSS to the issue-card component.</p><p><br></p><pre class='ql-syntax' spellcheck='false'>:host&nbsp;{&nbsp;&nbsp;@apply&nbsp;flex&nbsp;flex-grow;&nbsp;&nbsp;margin-bottom:&nbsp;5px;}</pre>",
       "type": "Bug",
       "status": "Done",
       "priority": "High",
@@ -196,9 +196,9 @@
       "userIds": ["d65047e5-f4cf-4caa-9a38-6073dcbab7d1"]
     },
     {
+      "title": "Angular - Custom Directive Not Reacting to Input Changes",
+      "description": "<h3>Reactivity Deficiency:</h3><p>A custom directive for input formatting is not responding to programmatic changes from the component class, though it reacts to user input.</p><h3>Technical Dive:</h3><p>Analysis of the directive's change detection strategy and Angular's change detection mechanism is essential to ensure full directive reactivity.</p>",
       "id": "9584",
-      "title": "What is Angular Jira clone application?",
-      "description": "<p>There have been a handful of cool Jira-cloned apps written in React/VueJS, which makes me wonder <strong>Why not Angular</strong>? And here you go.</p><p><br></p><p>This is <u>not only</u> a simplified Jira clone built with Angular, but also an example of a <u>modern, real-world</u> Angular codebase.</p><p><br></p><p><strong>Tech stack</strong></p><p><br></p><p><a href='https://raw.githubusercontent.com/jira-clone/jira-clone-angular/master/frontend/src/assets/img/jira-clone-tech-stack.png' rel='noopener noreferrer' target='_blank' style='color: rgb(3, 102, 214); background-color: rgb(255, 255, 255);'><img src='https://github.com/jira-clone/jira-clone-angular/raw/master/frontend/src/assets/img/jira-clone-tech-stack.png' alt='Tech logos'></a></p><p><br></p><ul><li><a href='https://cli.angular.io/' rel='noopener noreferrer' target='_blank' style='color: rgb(3, 102, 214);'>Angular CLI</a></li><li><a href='https://datorama.github.io/akita/' rel='noopener noreferrer' target='_blank' style='color: rgb(3, 102, 214);'>Akita</a>&nbsp;state management</li><li><a href='https://nestjs.com/' rel='noopener noreferrer' target='_blank' style='color: rgb(3, 102, 214);'>NestJS</a></li><li>UI modules:</li><li class='ql-indent-1'><a href='https://tailwindcss.com/' rel='noopener noreferrer' target='_blank' style='color: rgb(3, 102, 214);'>TailwindCSS</a></li><li class='ql-indent-1'>Angular CDK&nbsp;<a href='https://material.angular.io/cdk/drag-drop/overview' rel='noopener noreferrer' target='_blank' style='color: rgb(3, 102, 214);'>drag and drop</a></li><li class='ql-indent-1'><a href='https://ng.ant.design/docs/introduce/en' rel='noopener noreferrer' target='_blank' style='color: rgb(3, 102, 214);'>ng-zorro</a>&nbsp;UI component:&nbsp;<code style='background-color: rgba(27, 31, 35, 0.05);'>tooltip</code>,&nbsp;<code style='background-color: rgba(27, 31, 35, 0.05);'>modal</code>,&nbsp;<code style='background-color: rgba(27, 31, 35, 0.05);'>select</code>,&nbsp;<code style='background-color: rgba(27, 31, 35, 0.05);'>icon</code> and more.</li><li class='ql-indent-1'><a href='https://github.com/KillerCodeMonkey/ngx-quill' rel='noopener noreferrer' target='_blank' style='color: rgb(3, 102, 214);'>ngx-quill</a></li><li><a href='https://www.netlify.com/' rel='noopener noreferrer' target='_blank' style='color: rgb(3, 102, 214);'>Netlify</a></li><li><a href='https://www.heroku.com/' rel='noopener noreferrer' target='_blank' style='color: rgb(3, 102, 214);'>Heroku</a></li></ul>",
       "type": "Task",
       "status": "Backlog",
       "priority": "Medium",
@@ -209,9 +209,9 @@
       "userIds": ["081ccaa1-5595-4621-8074-ede4927e67b0", "610451aa-10c8-4d7e-9363-311357c0b0dd"]
     },
     {
+      "title": "Python - CSV Upload Feature Times Out",
+      "description": "<h3>Upload Timeout:</h3><p>The synchronous processing of large CSV file uploads is causing server blocks and timeouts.</p><h3>Proposed Upgrade:</h3><p>Migrating to an asynchronous processing model, such as utilizing Celery for background tasks, should alleviate the problem and streamline the upload process.</p>",
       "id": "9554",
-      "title": "Who is the author of Angular Jira clone?",
-      "description": "<h3>Hi! My name is Trung 👋</h3><p>I am a seasoned front-end engineer with 7 years of passion in creating experience-driven products. I am proficient in Angular, React and TypeScript development.</p><p>I'm helping the Angular community by creating open sources and writing about interesting and useful topics. I found that there weren't many resources on building a proper real-world scale application, and that's my focus for sharing. My most notable open-source projects are:</p><p><br></p><ul><li><a href='https://spotify.jira-clone.com/' rel='noopener noreferrer' target='_blank' style='color: var(--color-text-link);'>spotify.jira-clone.com</a></li><li><a href='https://jira.jira-clone.com/' rel='noopener noreferrer' target='_blank' style='color: var(--color-text-link);'>jira.jira-clone.com</a></li><li><a href='https://tetris.jira-clone.com/' rel='noopener noreferrer' target='_blank' style='color: var(--color-text-link);'>tetris.jira-clone.com</a></li><li><a href='https://github.com/angular-vietnam/100-days-of-angular' rel='noopener noreferrer' target='_blank' style='color: var(--color-text-link);'>github.com/angular-vietnam/100-days-of-angular</a></li></ul><p><br></p><p>Recently, I organized&nbsp;<a href='https://twitter.com/angularsg' rel='noopener noreferrer' target='_blank' style='color: var(--color-text-link);'>Angular Singapore</a>&nbsp;to advocate and grow the Angular developer community in Singapore. If you have any questions/problems with @angular or need any other advice? Feel free to&nbsp;✅&nbsp;<a href='https://calendly.com/angular-singapore/15min' rel='noopener noreferrer' target='_blank' style='color: var(--color-text-link);'>book a FREE one-on-one meeting</a>&nbsp;with me. I'll try my best to help you. </p><p><br></p><p>Find me around the web</p><p><br></p><ul><li><a href='https://jira-clone.com/' rel='noopener noreferrer' target='_blank'>https://jira-clone.com/</a></li><li><a href='https://github.com/jira-clone' rel='noopener noreferrer' target='_blank'>https://github.com/jira-clone</a></li><li><a href='https://stackoverflow.com/users/3375906/jira-clone' rel='noopener noreferrer' target='_blank'>https://stackoverflow.com/users/3375906</a></li><li><a href='https://stackblitz.com/@jira-clone' rel='noopener noreferrer' target='_blank'>https://stackblitz.com/@jira-clone</a></li><li><a href='https://twitter.com/trungvose' rel='noopener noreferrer' target='_blank'>https://twitter.com/trungvose</a></li></ul>",
       "type": "Task",
       "status": "Backlog",
       "priority": "High",
@@ -222,9 +222,9 @@
       "userIds": ["d65047e5-f4cf-4caa-9a38-6073dcbab7d1"]
     },
     {
+      "title": "Angular - Form Validation Fails Silently",
+      "description": "<h3>Validation Silence:</h3><p>Complex validation rules in Angular reactive forms are failing without providing clear user feedback.</p><h3>Improvement Plan:</h3><p>Examining and possibly refactoring the custom validators to ensure they return informative and consistent error messages is crucial for user guidance.</p>",
       "id": "9665",
-      "title": "Angular router not working on Netlify on refresh",
-      "description": "<p>Old question, but for those who might stumble on it on how to enable angular routing in Netlify. </p><p><br></p><p>See the full answer on <a target='_blank' href='https://stackoverflow.com/a/52312060/3375906'>stackoverflow</a>.</p><p><br></p><p>Create a file <code>_redirects</code> in your <code>src</code> folder, add the following to it:</p><p><br></p><pre class='ql-syntax' spellcheck='false'>/*  /index.html 200",
       "type": "Bug",
       "status": "Done",
       "priority": "High",
@@ -235,9 +235,9 @@
       "userIds": ["94502aad-c97f-43e1-a9d1-28cf3e4937a7", "7ac265f9-b9ac-443f-a2b2-795682e579a4"]
     },
     {
+      "title": "Angular Devs vs Python Devs - The Great Space Indentation Debate",
+      "description": "<h3>Indentation Controversy:</h3><p>A spirited debate over the 'correct' number of spaces for indentation is ongoing between the Angular and Python developer teams.</p><h3>Peacekeeping Measures:</h3><p>A decision might need to be reached in a team meeting or all-hands discussion to establish a unified code formatting guideline and avoid a full-blown 'tab' controversy.</p>",
       "id": "9667",
-      "title": "When creating an issue, the assignee list is not working properly on searching",
-      "description": "After searching for an assignee on the list and clear the text, the option label was missing. It could be the bug on the ng-zorro select itself. If you have any idea, feel free to create a pull request. <br/> <br/><img src='https://raw.githubusercontent.com/jira-clone/jira-clone-angular/master/frontend/src/assets/img/assignee-bug.gif' alt='Assignee issue' />",
       "type": "Bug",
       "status": "Selected",
       "priority": "High",
