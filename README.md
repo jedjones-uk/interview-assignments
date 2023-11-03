@@ -1,38 +1,30 @@
 # A simplified Jira clone built with Angular, Akita and ng-zorro
 
-There have been a handful of cool Jira-cloned apps written in `React`/`VueJS`, which makes me wonder **Why not Angular**? And here you go.
+This is a simplified Jira clone built with Angular
 
-This is not only a simplified Jira clone built with Angular, but also an example of a **modern**, **real-world** Angular codebase.
+## Setting up development environment
 
-## Storybook
-
-### What is Storybook
-
-Storybook helps you build UI components in isolation from your app's business logic, data, and context.
-That makes it easy to develop hard-to-reach states. Save these UI states as **stories** to revisit during development, testing, or QA.
+- `git clone https://github.com/jira-clone/jira-clone-angular.git`
+- `cd jira-clone-angular`
+- `npm start` for angular web application
+- The app should run on `http://localhost:4200/`
 
 ## Tech stack
 
 - [Angular CLI][cli]
 - [Akita][akita] state management
-- [NestJS][nestjs]
 - UI modules:
   - [TailwindCSS][tailwind]
   - Angular CDK [drag and drop][cdkdrag]
   - [ng-zorro][ng-zorro] UI component: `tooltip`, `modal`, `select`, `icon` and more.
   - [ngx-quill][quill]
-- [Netlify][netlify]
-- [Heroku][heroku]
 
 [cli]: https://cli.angular.io/
 [akita]: https://datorama.github.io/akita/
-[nestjs]: https://nestjs.com/
 [tailwind]: https://tailwindcss.com/
 [cdkdrag]: https://material.angular.io/cdk/drag-drop/overview
 [ng-zorro]: https://ng.ant.design/docs/introduce/en
 [quill]: https://github.com/KillerCodeMonkey/ngx-quill
-[netlify]: https://www.netlify.com/
-[heroku]: https://www.heroku.com/
 
 ## High level design
 
@@ -45,7 +37,7 @@ I have an AppModule that will import:
 - Angular needed modules such as `BrowserModule` and any module that need to run `forRoot`.
 - The application core modules such as `AuthModule` that need to available on the whole platform.
 - And I also configured the router to [lazy load any modules][lazy-load] only when I needed. Otherwise, everything will be loaded when I start the application.
-  For instance, `LoginModule` when I open the URL at `/login` and `ProjectModule` when the URL is `/project`. Inside each modules, I could import whatever modules that are required. Such as I need the `JiraControlModule` for some custom UI components for the `ProjectModule`
+  For instance, `LoginModule` when I open the URL at `/login` and `ProjectModule` when the URL is `/project`. Inside each module, I could import whatever modules that are required. Such as I need the `JiraControlModule` for some custom UI components for the `ProjectModule`
 
 ### Simple data interaction flow
 
@@ -57,24 +49,17 @@ I set up a [project state with initial data][project-store]. The main heavy lift
 
 If you are using ngrx, you have to dispatch an action when you started fetching the project, and then there is an effect somewhere that was detached from your context need to handle the action, send a request to the API server. And finally, the effect will tell whether the data was successfully fetched or not. <u>There is nothing wrong with ngrx approach</u>, it is just too much concept and layer that you need to understand. To be honest, I used to afraid of integrating ngrx in my project because of the unnecessary complexity it would bring.
 
-### Proper authentication system 🔐
+### Unit/Integration tests
+
+I skipped writing test for this project.
+
+### Proper authentication system
 
 I am currently sending the same email and a random password to the server without any check to get the current user back.
 
-### Accessibility ♿
+### Accessibility
 
 Not all components have properly defined [aria attributes](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA), visual focus indicators, etc.
-
-## Setting up development environment 🛠
-
-- `git clone https://github.com/jira-clone/jira-clone-angular.git`
-- `cd jira-clone-angular`
-- `npm start` for angular web application
-- The app should run on `http://localhost:4200/`
-
-### Unit/Integration tests 🧪
-
-I skipped writing test for this project.
 
 ## Compatibility
 
