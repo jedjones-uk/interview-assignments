@@ -4,7 +4,7 @@ This is a simplified Jira clone built with Angular
 
 ## Setting up development environment
 
-- `git clone https://github.com/jira-clone/jira-clone-angular.git`
+- `git clone https://github.com/jedjones-uk/interview-assignments`
 - `cd jira-clone-angular`
 - `npm start` for angular web application
 - The app should run on `http://localhost:4200/`
