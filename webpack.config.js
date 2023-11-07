@@ -1,5 +1,7 @@
-
 module.exports = {
+  watchOptions: {
+    ignored: /node_modules/
+  },
   module: {
     rules: [
       {
@@ -9,10 +11,10 @@ module.exports = {
           postcssOptions: {
             ident: 'postcss',
             syntax: 'postcss-scss',
-            plugins: ['postcss-import', 'tailwindcss', 'autoprefixer'],
-          },
-        },
-      },
-    ],
-  },
-}
+            plugins: ['postcss-import', 'tailwindcss', 'autoprefixer']
+          }
+        }
+      }
+    ]
+  }
+};

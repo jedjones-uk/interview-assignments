@@ -5,7 +5,8 @@ This is a simplified Jira clone built with Angular
 ## Setting up development environment
 
 - `git clone https://github.com/jedjones-uk/interview-assignments`
-- `cd jira-clone-angular`
+- `cd interview-assignments`
+- `npm install`
 - `npm start` for angular web application
 - The app should run on `http://localhost:4200/`
 
@@ -20,7 +21,7 @@ This is a simplified Jira clone built with Angular
   - [ngx-quill][quill]
 
 [cli]: https://cli.angular.io/
-[akita]: https://datorama.github.io/akita/
+[akita]: https://opensource.salesforce.com/akita/
 [tailwind]: https://tailwindcss.com/
 [cdkdrag]: https://material.angular.io/cdk/drag-drop/overview
 [ng-zorro]: https://ng.ant.design/docs/introduce/en

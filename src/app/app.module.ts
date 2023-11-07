@@ -12,7 +12,7 @@ import { AppComponent } from './app.component';
 import { NzIconModule } from 'ng-zorro-antd/icon';
 import { NzSpinModule } from 'ng-zorro-antd/spin';
 import { QuillModule } from 'ngx-quill';
-import * as Sentry from '@sentry/angular';
+
 import { Router } from '@angular/router';
 
 @NgModule({
@@ -35,20 +35,13 @@ import { Router } from '@angular/router';
       useValue: { baseUrl: 'https://jsonplaceholder.typicode.com' }
     },
     {
-      provide: ErrorHandler,
-      useValue: Sentry.createErrorHandler()
-    },
-    {
-      provide: Sentry.TraceService,
-      deps: [Router],
-    },
-    {
       provide: APP_INITIALIZER,
-      useFactory: () => () => {},
-      deps: [Sentry.TraceService],
-      multi: true,
-    },
+      useFactory: () => () => {
+      },
+      multi: true
+    }
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule {
+}
